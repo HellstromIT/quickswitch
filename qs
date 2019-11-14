@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
 from app.common.walk import walklevel
+from pathlib import Path
 
-walk_dirs = ['/home/martin/git', '/home/martin/git/discovery']
+home = str(Path.home())
+
+walk_dirs = [home + '/git', home + '/git/discovery']
 found_dirs = []
 
 for directory in walk_dirs:
