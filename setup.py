@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='quickswitch',
-    version='0.1',
+    version='0.1.1',
     scripts=['qs'] ,
     author="Martin Hellstrom",
     author_email="martin@hellstrom.it",
