@@ -1,4 +1,4 @@
-from pyfzf.pyfzf import FzfPrompt
+from iterfzf import iterfzf
 from app.common.walk import walklevel 
 
 def addDirectory(config, folder):
@@ -14,10 +14,9 @@ def listDirectories(config):
     return(directories)
 
 def selectDirectory(config, cwd):
-    fzf = FzfPrompt()
     directories = listDirectories(config)
     try:
-        directory = fzf.prompt(directories)
-        print(directory[0])
+        directory = iterfzf(directories)
+        print(directory)
     except:
         print(cwd)

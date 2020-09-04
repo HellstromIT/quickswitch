@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='quickswitch',
-    version='0.2.0',
+    version='0.2.1',
     scripts=['qs'] ,
     author="Martin Hellstrom",
     author_email="martin@hellstrom.it",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/hellstromit/quickswitch",
     packages=setuptools.find_packages(),
     install_requires=[
-        'pyfzf==0.2.2'
+        'iterfzf==0.5.0.20.0'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
