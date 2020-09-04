@@ -8,7 +8,7 @@ setuptools.setup(
     scripts=['qs'] ,
     author="Martin Hellstrom",
     author_email="martin@hellstrom.it",
-    description="A utility to list directories within directories. Useful with fzf",
+    description="A utility to find subdirectories using fzf",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hellstromit/quickswitch",
