@@ -4,16 +4,17 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='quickswitch',
-    version='0.1.3',
+    version='0.2.1',
     scripts=['qs'] ,
     author="Martin Hellstrom",
     author_email="martin@hellstrom.it",
-    description="A utility to list directories within directories. Useful with fzf",
+    description="A utility to find subdirectories using fzf",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hellstromit/quickswitch",
     packages=setuptools.find_packages(),
     install_requires=[
+        'iterfzf==0.5.0.20.0'
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
