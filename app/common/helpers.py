@@ -15,8 +15,8 @@ def listDirectories(config):
 
 def selectDirectory(config, cwd):
     directories = listDirectories(config)
-    try:
-        directory = iterfzf(directories)
+    directory = iterfzf(directories)
+    if directory:
         print(directory)
-    except:
+    else:
         print(cwd)
