@@ -2,9 +2,17 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+def get_version():
+    version_file = "app/_version.py"
+    with open(version_file) as f:
+        exec(compile(f.read(), version_file, "exec"))
+    return(locals()["__version__"])
+
+quickswitch_version = get_version()
+
 setuptools.setup(
     name='quickswitch',
-    version='0.2.1',
+    version=quickswitch_version,
     scripts=['qs'] ,
     author="Martin Hellstrom",
     author_email="martin@hellstrom.it",
