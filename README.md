@@ -7,7 +7,7 @@ Currently this package is not available on pypi. To install use the following co
 
 There's no default search directories out of the box so to add a directory you wish to include run 
 
-<code>qs --add <directory></code>
+<code>qs --add full_path_to_directory</code>
 
 The command will only search one level deep so if you have multiple levels that you wish to search you need to add them one at a time.
 
