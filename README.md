@@ -3,7 +3,9 @@
 # Installation
 Currently this package is not available on pypi. To install use the following command
 
-<code>pip install -e git+https://github.com/HellstromIT/quickswitch.git@<latest tag>#egg=quickswitch</code>
+<code>pip install -e git+https://github.com/HellstromIT/quickswitch.git@{tag to install}#egg=quickswitch</code>
+
+Make sure you replace {tag to install} with a tag from https://github.com/HellstromIT/quickswitch/tags
 
 There's no default search directories out of the box so to add a directory you wish to include run 
 
