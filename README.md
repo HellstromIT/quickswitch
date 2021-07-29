@@ -1,3 +1,5 @@
+This repository is archived. Please use https://github.com/HellstromIT/go-quickswitch instead!
+
 # About
 
 # Installation
